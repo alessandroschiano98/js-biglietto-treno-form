@@ -15,7 +15,7 @@
 </head>
 
 <body>
-
+    <!-- NAVBAR -->
     <header>
         <nav class="navbar bg-body-tertiary">
             <div class="container-fluid">
@@ -25,37 +25,49 @@
             </div>
         </nav>
     </header>
+    <!-- CONTENUTO -->
     <main>
-        <form>
+        <form class="">
+            <!-- NOME -->
             <div class="form-group w-50 p-3">
                 <label for="name">Nome</label>
                 <input type="text" class="form-control" id="formGroupName" placeholder="inserisci il tuo nome">
             </div>
+            <!-- COGNOME -->
             <div class="form-group w-50 p-3">
                 <label for="surname">Cognome</label>
                 <input type="text" class="form-control" id="formGroupSurname" placeholder="inserisci il tuo cognome">
             </div>
+            <!-- ETA' -->
             <div class="form-group w-50 p-3">
                 <label for="age">Età</label>
                 <input type="text" class="form-control" id="formGroupAge" placeholder="inserisci la tua età">
             </div>
+            <!-- KILOMETRI -->
             <div class="form-group w-50 p-3">
                 <label for="km">Km </label>
-                <input type="text" class="form-control" id="formGroupKm" placeholder="quanti chilometri devi percorrere">
+                <input type="text" class="form-control" id="formGroupKm"
+                    placeholder="quanti chilometri devi percorrere">
             </div>
+            <!-- TASTO CALCOLA -->
             <div class="form-group w-50 p-3">
-                <button type="bottonInvia" class="btn btn-primary">Invia</button>
+                <button type="buttonCalcola" class="btn btn-primary">Calcola</button>
             </div>
             <div>
-                
+            </div>
+            <!-- TOTALE -->
+            <div class="form-group w-50 p-3">
+                Il totale del tuo ticket sarà di
+                <span class="badge text-bg-primary rounded-pill">199€</span>
+                </li>
+                </ul>
             </div>
         </form>
-
     </main>
-  
 
 
 
+    <!-- LINK JAVASCRIPT -->
     <script src="./js/script.js"></script>
 </body>
 
