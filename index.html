@@ -27,44 +27,45 @@
     </header>
     <!-- CONTENUTO -->
     <main>
-<div class="container m-3">
-                <!-- NOME -->
-                <div class="form-group w-50 p-3">
-                    <form action="" id="user-form">
+        <div class="container m-3">
+            <!-- NOME -->
+            <div class="form-group w-50 p-3">
+                <p class="primoTitolo">Scrivi qui i tuoi dati per calcolare il costo del tuo biglietto:
+                </p>
+                <form action="" id="user-form">
                     <label class="p-2" for="name">Nome</label>
-                    <input type="text" class="form-control" id="name" placeholder="inserisci il tuo nome">
-                </div>
-                <!-- COGNOME -->
-                <div class="form-group w-50 p-3">
-                    <label class="p-2" ="surname">Cognome</label>
-                    <input type="text" class="form-control" id="surname" placeholder="inserisci il tuo cognome">
-                </div>
-                <!-- ETA' -->
-                <div class="form-group w-50 p-3">
-                    <label class="p-2" for="age">Età</label>
-                    <input type="text" class="form-control" id="age" placeholder="inserisci la tua età">
-                </div>
-                <!-- KILOMETRI -->
-                <div class="form-group w-50 p-3">
-                    <label class="p-2" for="km">Km </label>
-                    <input type="text" class="form-control" id="km"
-                        placeholder="quanti chilometri vuoi percorrere">
-                </div>
-                <!-- TASTO CALCOLA -->
-                <div class="form-group w-50 p-3">
-                    <button id="btnCalcola" type="calcola" class="btn btn-primary">Calcola</button>
-                </div>
-                <div>
-                </div>
-                <!-- TOTALE -->
-                <div class="form-group w-50 p-3 mb-3">
-                    <span id="textTotale" class="text-totale">Il totale del tuo ticket sarà di</span>
-                    <span class="badge text-bg-primary rounded-pill">totale</span>
-                    </li>
-                    </ul>
-                </div>
-            </form>
-</div>
+                    <input type="text" class="form-control" id="name" placeholder="inserisci il tuo nome"
+                        autocomplete="off">
+            </div>
+            <!-- COGNOME -->
+            <div class="form-group w-50 p-3">
+                <label class="p-2"="surname">Cognome</label>
+                <input type="text" class="form-control" id="surname" placeholder="inserisci il tuo cognome"
+                    autocomplete="off">
+            </div>
+            <!-- ETA' -->
+            <div class="form-group w-50 p-3">
+                <label class="p-2" for="age">Età</label>
+                <input type="text" class="form-control" id="age" placeholder="inserisci la tua età" autocomplete="off">
+            </div>
+            <!-- KILOMETRI -->
+            <div class="form-group w-50 p-3">
+                <label class="p-2" for="km">Km </label>
+                <input type="text" class="form-control" id="km" placeholder="quanti chilometri vuoi percorrere"
+                    autocomplete="off">
+            </div>
+            <!-- TASTO CALCOLA -->
+            <div class="form-group w-50 p-3">
+                <button id="btnCalcola" type="calcola" class="btn btn-primary">Calcola</button>
+            </div>
+            <div>
+            </div>
+            <!-- TOTALE -->
+            <div class="form-group w-50 p-3">
+                <div class="boxResult form-control">Totale</div>
+            </div>
+        </form>
+        </div>
     </main>
 
 
