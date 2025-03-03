@@ -27,42 +27,41 @@
     </header>
     <!-- CONTENUTO -->
     <main>
-        <form class="">
             <!-- NOME -->
             <div class="form-group w-50 p-3">
+                <form action="" id="user-form"></form>
                 <label class="p-2" for="name">Nome</label>
-                <input type="text" class="form-control" id="formGroupName" placeholder="inserisci il tuo nome">
+                <input type="text" class="form-control" id="name" placeholder="inserisci il tuo nome">
             </div>
             <!-- COGNOME -->
             <div class="form-group w-50 p-3">
                 <label class="p-2" ="surname">Cognome</label>
-                <input type="text" class="form-control" id="formGroupSurname" placeholder="inserisci il tuo cognome">
+                <input type="text" class="form-control" id="surname" placeholder="inserisci il tuo cognome">
             </div>
             <!-- ETA' -->
             <div class="form-group w-50 p-3">
                 <label class="p-2" for="age">Età</label>
-                <input type="text" class="form-control" id="formGroupAge" placeholder="inserisci la tua età">
+                <input type="text" class="form-control" id="age" placeholder="inserisci la tua età">
             </div>
             <!-- KILOMETRI -->
             <div class="form-group w-50 p-3">
                 <label class="p-2" for="km">Km </label>
-                <input type="text" class="form-control" id="formGroupKm"
-                    placeholder="quanti chilometri devi percorrere">
+                <input type="text" class="form-control" id="km"
+                    placeholder="quanti chilometri vuoi percorrere">
             </div>
             <!-- TASTO CALCOLA -->
             <div class="form-group w-50 p-3">
-                <button type="buttonCalcola" class="btn btn-primary">Calcola</button>
+                <button id="btnCalcola" type="calcola" class="btn btn-primary">Calcola</button>
             </div>
             <div>
             </div>
             <!-- TOTALE -->
-            <div class="form-group w-50 p-3">
-                <span class="textTotale">Il totale del tuo ticket sarà di</span>
+            <div class="form-group w-50 p-3 mb-3">
+                <span id="textTotale" class="text-totale">Il totale del tuo ticket sarà di</span>
                 <span class="badge text-bg-primary rounded-pill">totale</span>
                 </li>
                 </ul>
             </div>
-        </form>
     </main>
 
 
