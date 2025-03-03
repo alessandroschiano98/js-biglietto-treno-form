@@ -60,21 +60,18 @@ console.log(kmLabel);
 // RESULT
 const btnCalcoloTotale = document.getElementById("btnCalcola")
 console.log(btnCalcoloTotale);
-const textTotale = document.getElementById("textTotale")
-console.log(textTotale);
+const boxResultLabel = document.getElementById("boxResult")
+console.log(boxResultLabel);
 
 
 
 userForm.addEventListener("btnCalcola", gestisciUserForm);
+
 function gestisciUserForm (event) {
     event.preventDefault();
     console.log("userForm");
-    // PRELEVARE I DATI DAGLI INPUTS
-    const name = nameLabel.value;
-    const surname = surnameLabel.value;
-    const age = ageLabel.value;
-    const km = kmLabel.value;
-    console.log(age,km)
+
+    
 
     // CALCOLO E OUTPUT
     const name = nameLabel.value;
@@ -82,7 +79,7 @@ function gestisciUserForm (event) {
     const fullname = `${name} ${surname}`;
     console.log(fullname);
     
-    textTotale.className = "";
-    textTotale.classList.add(messageClass);
-    textTotale.innerText = `Ciao ${fullname}`;
+    boxResultLabel.nameLabel = "";
+    boxResultLabel.classList.add(box-result);
+    boxResultLabel.innerText = `Ciao ${fullname}`;
 }
