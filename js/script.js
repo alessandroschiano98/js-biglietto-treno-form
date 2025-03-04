@@ -57,29 +57,24 @@ const ageLabel = document.getElementById("age")
 console.log(ageLabel);
 const kmLabel = document.getElementById("km")
 console.log(kmLabel);
+
+
 // RESULT
-const btnCalcoloTotale = document.getElementById("btnCalcola")
-console.log(btnCalcoloTotale);
+const btnCalcolaTotale = document.getElementById("btn-calcola")
+console.log(btnCalcolaTotale);
 const boxResultLabel = document.getElementById("boxResult")
 console.log(boxResultLabel);
 
 
 
-userForm.addEventListener("btnCalcola", gestisciUserForm);
-
-function gestisciUserForm (event) {
-    event.preventDefault();
-    console.log("userForm");
-
-    
-
-    // CALCOLO E OUTPUT
+userForm.addEventListener("btn-calcola", function () {
+    console.log("btn-calcola");
     const name = nameLabel.value;
+    console.log(name);
     const surname = surnameLabel.value;
-    const fullname = `${name} ${surname}`;
-    console.log(fullname);
-    
-    boxResultLabel.nameLabel = "";
-    boxResultLabel.classList.add(box-result);
-    boxResultLabel.innerText = `Ciao ${fullname}`;
-}
+    console.log(surname);
+    const age = ageLabel.value;
+    console.log(age);
+    const km = kmLabel.value;
+    console.log(km);
+});
