@@ -51,7 +51,7 @@ function gestisciUserForm(event) {
 
 
     // INSERISCO I VALORI DEGLI ELEMENTI
-    resultLabel.innerText = `Ciao ${name} ${surname} dato che la tua età corrisponde a ${age} anni ed hai intenzione di percorrere ${km} km, hai il diritto al ${saleTicket}% di sconto, dunque il costo del tuo biglietto sarà di €${finalPrice.toFixed(2)} per kilometro percorso, per un totale di  `;
+    resultLabel.innerText = `Ciao ${name} ${surname} dato che la tua età corrisponde a ${age} anni ed hai intenzione di percorrere ${km} km, hai il diritto al ${saleTicket}% di sconto, dunque il costo del tuo biglietto sarà di €${finalPrice.toFixed(2)} per kilometro percorso, per un totale di €${ticket}. `;
 
 
 
