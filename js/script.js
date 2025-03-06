@@ -30,7 +30,7 @@ function gestisciUserForm(event) {
     const surname = surnameLabel.value;
     const age = parseInt(ageLabel.value);
     const km = parseInt(kmLabel.value);
-
+    
 
     // BIGLIETTO //
     const baseTicketForKm = 0.21;
