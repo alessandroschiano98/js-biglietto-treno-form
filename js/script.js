@@ -25,6 +25,7 @@ const resultLabel = document.getElementById("result-elem")
 
 
 
+// TASTO CALCOLA //
 
 userForm.addEventListener("calcola", gestisciUserForm); // calcola non è un codice scaturito da html
 
@@ -60,9 +61,12 @@ function gestisciUserForm(event) {
 
 };
 
+// TASTO RESET // 
+
 resetBtn.addEventListener("reset", function (event) {
     event.preventDefault();
     console.log("Reset");
+    
     nameLabel.innerText = "";
     surnameLabel.innerText = "";
     ageLabel.innerText = "";
