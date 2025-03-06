@@ -15,10 +15,6 @@ console.log(kmLabel);
 
 
 // RESULT
-const btnCalcolaTotale = document.getElementById("btn-calcola")
-console.log(btnCalcolaTotale);
-const boxResultLabel = document.getElementById("box-result")
-console.log(boxResultLabel);
 const resultLabel = document.getElementById("result-elem")
 
 
@@ -32,21 +28,21 @@ function gestisciUserForm(event) {
     // PRELEVO I VALORI DEGLI INPUT
     const name = nameLabel.value;
     const surname = surnameLabel.value;
-    const age = ageLabel.value;
-    const km = kmLabel.value;
+    const age = parseInt(ageLabel.value);
+    const km = parseInt(kmLabel.value);
 
 
     // BIGLIETTO //
     const baseTicketForKm = 0.21;
-    const ticket = (0.21 * kmLabel)
+    const ticket = (0.21 * kmLabel.value)
     console.log(ticket);
 
     // USER AGE SCONTO + SCONTO BIGLIETTO // 
     let saleTicket = 0;
-    if (ageLabel < 18) {
+    if (ageLabel.value < 18) {
         saleTicket = 20;
     }
-    else if (ageLabel > 65) {
+    else if (ageLabel.value > 65) {
         saleTicket = 40;
     }
 
@@ -55,7 +51,7 @@ function gestisciUserForm(event) {
 
 
     // INSERISCO I VALORI DEGLI ELEMENTI
-    resultLabel.innerText = `Ciao ${name} ${surname} dato che la tua età corrisponde a ${age} anni ed hai intenzione di percorrere ${km} km, hai il diritto al ${saleTicket}% di sconto, dunque il costo del tuo biglietto sarà di €${finalPrice.toFixed(2)} `;
+    resultLabel.innerText = `Ciao ${name} ${surname} dato che la tua età corrisponde a ${age} anni ed hai intenzione di percorrere ${km} km, hai il diritto al ${saleTicket}% di sconto, dunque il costo del tuo biglietto sarà di €${finalPrice.toFixed(2)} per kilometro percorso, per un totale di  `;
 
 
 
